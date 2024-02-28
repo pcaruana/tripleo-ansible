@@ -1,1 +1,21 @@
-../molecule-requirements.txt
+# this is required for the molecule jobs
+ansible
+ansi2html
+docker
+pytest
+pytest-cov
+pytest-html
+pytest-xdist
+mock
+molecule>=2.22rc1,<3
+netaddr
+
+# this is required for the docs build jobs
+sphinx
+openstackdocstheme>=1.29.2 # Apache-2.0
+reno>=2.11.3 # Apache-2.0
+doc8>=0.8.0 # Apache-2.0
+bashate>=0.6.0 # Apache-2.0
+anyconfig>=0.10.0 # not directly required, pinned by Snyk to avoid a vulnerability
+paramiko>=3.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
